@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+}
+
+/* navbar */
+.navbar {
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: black;
+    color: rgb(139, 139, 139);
+}
+
+.flex-row-container {
+    display: flex;
+    align-items: center;
+}
+
+ol.flex-row-container>* {
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 20px 20px 20px 0px;
+    background: none;
+}
+
+.btn-secondary {
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.btn-dark {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 100px;
+}
+
+.menu-btn {
+    display: none;
+    background-color: #272626;
+    border: none;
+    color: #ddd;
+    font-size: 18px;
+}
+
+
+
+/* header */
+.hero {
+    background-image: url('https://www.elearninfotech.com/img/courses/graphic/vector-drawing.webp');
+    min-height: 90vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+
+}
+
+.hero>section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 20px 0px;
+}
+
+.social {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-title,
+.social-link {
+    font-size: 0.8rem;
+    margin: 10px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-form {
+    padding: 10px;
+}
+
+.email-form>p {
+    font-size: 0.8rem;
+    color: #272626;
+}
+
+.email-form>input[type='email'] {
+    background: #f3f3f3;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width:750px) {
+    .menu-btn {
+        display: inline;
+    }
+
+    .flex-row-container {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    ol.flex-row-container {
+        flex-direction: column;
+        margin-top: 20px;
+        position: relative;
+        display: none;
+    }
+
+    ol.flex-row-container>* {
+        margin: 15px 0;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+
+    .hero {
+        background-image: url('https://www.elearninfotech.com/img/courses/graphic/vector-drawing.webp');
+        min-height: 60vh;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero>section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    .hero-text {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width:750px) {
+    ol.flex-row-container {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .hero-text {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
