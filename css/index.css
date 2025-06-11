@@ -30,7 +30,7 @@ ol.flex-row-container>* {
 
 .btn {
     padding: 10px 15px;
-    border-radius: 5px;
+    color: #272626;
     margin: 20px 20px 20px 0px;
     background: none;
 }
@@ -52,6 +52,8 @@ ol.flex-row-container>* {
     border: none;
     color: #ddd;
     font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 
