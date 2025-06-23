@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+}
+
+body {
+    padding: 0 15%;
+}
+
+a {
+    color: rgb(62, 62, 255);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.active {
+    color: black;
+    font-weight: 500;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links>li {
+    margin: 0 10px;
+    color: #343434;
+    font-size: 18px;
+}
+
+.menubtn {
+    display: none;
+}
+
+.menubtn:hover {
+    cursor: pointer;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section-title {
+    font-size: 20px;
+    background-color: #ddd;
+    padding: 10px 20px;
+}
+
+.section-content {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.skill-table {
+    padding: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.sub-section {
+    padding: 20px 10px;
+}
+
+.contact-info {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    color: rgb(62, 62, 255);
+}
+
+.style-text {
+    font-style: italic;
+}
+
+.article {
+    padding: 20px;
+    background-color: #f3f3f3;
+    margin: 10px;
+    border: 1px solid #ddd;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.project-description {
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+@media only screen and (max-width:600px) {
+    body {
+        padding: 0;
+    }
+
+    .nav {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .menubtn {
+        display: block;
+        padding: 10px 15px;
+        font-size: 18px;
+        background-color: hsl(0, 0%, 100%);
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .nav {
+        position: relative;
+    }
+
+    .nav-links {
+        position: absolute;
+        flex-direction: column;
+        top: 65px;
+        background-color: white;
+        display: none;
+        padding: 10px;
+        left: 10px;
+        right: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 10px;
+    }
+
+    .nav-links>li {
+        margin: 40px 10px;
+    }
+}
